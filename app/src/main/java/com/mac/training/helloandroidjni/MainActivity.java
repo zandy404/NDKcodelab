@@ -49,4 +49,12 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    // new code
+    static {
+        System.loadLibrary("hello-android-jni");
+    }
+    public native String getMsgFromJni();
+    // new code done
+
 }
